@@ -1,0 +1,7 @@
+#ASP.Net Core build files
+.vs
+bin/
+obj/
+.DS_Store
+.sln
+.vscode/
