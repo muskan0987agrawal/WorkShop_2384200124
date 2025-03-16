@@ -1,10 +1,15 @@
 using BusinessLayer.Interface;
 using BusinessLayer.Service;
+using BusinessLayer.Validator;
+using FluentValidation.AspNetCore;
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using ModelLayer.Model;
 using RepositoryLayer.Context;
 using RepositoryLayer.Interface;
 using RepositoryLayer.Service;
+using BusinessLayer.Mapping;
 
 internal class Program
 {
@@ -15,6 +20,13 @@ internal class Program
         //Databse connectivity
         var connectionString = builder.Configuration.GetConnectionString("sqlConnection");
         builder.Services.AddDbContext<AddressBookDbContext>(options => options.UseSqlServer(connectionString));
+
+        
+        builder.Services.AddAutoMapper(typeof(AddressBookProfile));
+
+        builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
+        builder.Services.AddScoped<IValidator<RequestAddressBook>, RequestAddressBookValidator>();
+
 
         // Add services to the container.
 
@@ -32,6 +44,8 @@ internal class Program
             var xmlFilename = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
             options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
         });
+
+
         var app = builder.Build();
         app.UseSwagger();
         app.UseSwaggerUI();

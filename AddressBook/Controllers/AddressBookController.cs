@@ -1,45 +1,73 @@
+using AutoMapper;
+using BusinessLayer.Interface;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
+using RepositoryLayer.Entity;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace AddressBook.Controllers
 {
-    /// <summary>
-    /// Controller for managing address book contacts.
-    /// Provides endpoints to add, update, retrieve, and delete contacts.
-    /// </summary>
     [ApiController]
     [Route("api/addressbook")]
     public class AddressBookController : ControllerBase
     {
-        private static List<ResponseAddressBook> _contacts = new List<ResponseAddressBook>();
+        private static List<AddressBookEntity> _contacts = new List<AddressBookEntity>();
         private static int _nextId = 1;
+        private readonly IMapper _mapper;
+        private readonly IValidator<RequestAddressBook> _validator;
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="AddressBookController"/> class.
+        /// </summary>
+        /// <param name="mapper">The AutoMapper instance.</param>
+        /// <param name="validator">The FluentValidation instance.</param>
+        public AddressBookController(IMapper mapper, IValidator<RequestAddressBook> validator)
+        {
+            _mapper = mapper;
+            _validator = validator;
+        }
 
         /// <summary>
         /// Retrieves all contacts from the address book.
         /// </summary>
-        /// <returns>A list of contacts or a NotFound response if no contacts exist.</returns>
+        /// <returns>A list of contacts.</returns>
         [HttpGet]
-        public ActionResult<IEnumerable<ResponseAddressBook>> GetAllContacts()
+        public ActionResult<ResponseBody<IEnumerable<ResponseAddressBook>>> GetAllContacts()
         {
-            if (_contacts.Count == 0)
-                return NotFound(new { message = "No contacts found" });
-
-            return Ok(new { message = "Contacts retrieved successfully", data = _contacts });
+            var response = _mapper.Map<IEnumerable<ResponseAddressBook>>(_contacts);
+            return Ok(new ResponseBody<IEnumerable<ResponseAddressBook>>
+            {
+                Success = true,
+                Message = "Contacts retrieved successfully",
+                Data = response
+            });
         }
 
         /// <summary>
-        /// Retrieves a contact by its unique ID.
+        /// Retrieves a contact by the specified ID.
         /// </summary>
-        /// <param name="id">The ID of the contact.</param>
-        /// <returns>The contact details or a NotFound response if not found.</returns>
+        /// <param name="id">The unique identifier of the contact.</param>
+        /// <returns>The contact details if found.</returns>
         [HttpGet("get/{id}")]
-        public ActionResult<ResponseAddressBook> GetContactById(int id)
+        public ActionResult<ResponseBody<ResponseAddressBook>> GetContactById(int id)
         {
             var contact = _contacts.Find(c => c.Id == id);
             if (contact == null)
-                return NotFound(new { message = $"Contact with ID {id} not found" });
+                return NotFound(new ResponseBody<ResponseAddressBook>
+                {
+                    Success = false,
+                    Message = $"Contact with ID {id} not found"
+                });
 
-            return Ok(new { message = "Contact retrieved successfully", data = contact });
+            var response = _mapper.Map<ResponseAddressBook>(contact);
+            return Ok(new ResponseBody<ResponseAddressBook>
+            {
+                Success = true,
+                Message = "Contact retrieved successfully",
+                Data = response
+            });
         }
 
         /// <summary>
@@ -48,23 +76,29 @@ namespace AddressBook.Controllers
         /// <param name="request">The contact details to be added.</param>
         /// <returns>The created contact with its assigned ID.</returns>
         [HttpPost("add")]
-        public ActionResult<ResponseAddressBook> AddContact([FromBody] RequestAddressBook request)
+        public ActionResult<ResponseBody<ResponseAddressBook>> AddContact([FromBody] RequestAddressBook request)
         {
-            if (request == null)
-                return BadRequest(new { message = "Invalid request data" });
+            var validationResult = _validator.Validate(request);
+            if (!validationResult.IsValid)
+                return BadRequest(new ResponseBody<ResponseAddressBook>
+                {
+                    Success = false,
+                    Message = "Validation failed",
+                    Data = null
+                });
 
-            var newContact = new ResponseAddressBook
-            {
-                Id = _nextId++,
-                Name = request.Name,
-                PhoneNumber = request.PhoneNumber,
-                Email = request.Email,
-                Address = request.Address
-            };
+            var newContact = _mapper.Map<AddressBookEntity>(request);
+            newContact.Id = _nextId++;
 
             _contacts.Add(newContact);
-            return CreatedAtAction(nameof(GetContactById), new { id = newContact.Id },
-                new { message = "Contact added successfully", data = newContact });
+
+            var response = _mapper.Map<ResponseAddressBook>(newContact);
+            return CreatedAtAction(nameof(GetContactById), new { id = response.Id }, new ResponseBody<ResponseAddressBook>
+            {
+                Success = true,
+                Message = "Contact added successfully",
+                Data = response
+            });
         }
 
         /// <summary>
@@ -72,36 +106,60 @@ namespace AddressBook.Controllers
         /// </summary>
         /// <param name="id">The ID of the contact to update.</param>
         /// <param name="request">The updated contact details.</param>
-        /// <returns>The updated contact details or a NotFound response if the contact does not exist.</returns>
+        /// <returns>The updated contact details.</returns>
         [HttpPut("update/{id}")]
-        public ActionResult<ResponseAddressBook> UpdateContact(int id, [FromBody] RequestAddressBook request)
+        public ActionResult<ResponseBody<ResponseAddressBook>> UpdateContact(int id, [FromBody] RequestAddressBook request)
         {
+            var validationResult = _validator.Validate(request);
+            if (!validationResult.IsValid)
+                return BadRequest(new ResponseBody<ResponseAddressBook>
+                {
+                    Success = false,
+                    Message = "Validation failed"
+                });
+
             var contact = _contacts.Find(c => c.Id == id);
             if (contact == null)
-                return NotFound(new { message = $"Contact with ID {id} not found" });
+                return NotFound(new ResponseBody<ResponseAddressBook>
+                {
+                    Success = false,
+                    Message = $"Contact with ID {id} not found"
+                });
 
-            contact.Name = request.Name;
-            contact.PhoneNumber = request.PhoneNumber;
-            contact.Email = request.Email;
-            contact.Address = request.Address;
+            _mapper.Map(request, contact);
+            var response = _mapper.Map<ResponseAddressBook>(contact);
 
-            return Ok(new { message = "Contact updated successfully", data = contact });
+            return Ok(new ResponseBody<ResponseAddressBook>
+            {
+                Success = true,
+                Message = "Contact updated successfully",
+                Data = response
+            });
         }
 
         /// <summary>
-        /// Deletes a contact from the address book.
+        /// Deletes a contact by the specified ID.
         /// </summary>
-        /// <param name="id">The ID of the contact to delete.</param>
-        /// <returns>A success message or a NotFound response if the contact does not exist.</returns>
+        /// <param name="id">The unique identifier of the contact to delete.</param>
+        /// <returns>A success message if the deletion is successful.</returns>
         [HttpDelete("delete/{id}")]
-        public ActionResult DeleteContact(int id)
+        public ActionResult<ResponseBody<string>> DeleteContact(int id)
         {
             var contact = _contacts.Find(c => c.Id == id);
             if (contact == null)
-                return NotFound(new { message = $"Contact with ID {id} not found" });
+                return NotFound(new ResponseBody<string>
+                {
+                    Success = false,
+                    Message = $"Contact with ID {id} not found"
+                });
 
             _contacts.Remove(contact);
-            return Ok(new { message = "Contact deleted successfully" });
+            return Ok(new ResponseBody<string>
+            {
+                Success = true,
+                Message = "Contact deleted successfully",
+                Data = $"Deleted contact ID: {id}"
+            });
         }
     }
 }
