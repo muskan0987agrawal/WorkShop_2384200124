@@ -1,0 +1,27 @@
+# Build files and binaries
+bin/
+obj/
+.DS_Store
+
+# User-specific files
+*.user
+*.vs
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.cache
+
+# Logs & Debugging
+logs/
+*.log
+
+# Configuration & Secrets
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Test.json
+secrets.json
+
+# JetBrains Rider & VS Code
+.idea/
+.vscode/
