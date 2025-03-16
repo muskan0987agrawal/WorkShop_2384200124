@@ -21,7 +21,11 @@ internal class Program
         var connectionString = builder.Configuration.GetConnectionString("sqlConnection");
         builder.Services.AddDbContext<AddressBookDbContext>(options => options.UseSqlServer(connectionString));
 
-        
+        //Register Dependencies
+        builder.Services.AddScoped<IAddressBookBL, AddressBookBL>();
+        builder.Services.AddScoped<IAddressBookRL, AddressBookRL>();
+
+
         builder.Services.AddAutoMapper(typeof(AddressBookProfile));
 
         builder.Services.AddFluentValidationAutoValidation().AddFluentValidationClientsideAdapters();
@@ -32,11 +36,8 @@ internal class Program
 
         builder.Services.AddControllers();
 
-        //Register Dependencies
-        builder.Services.AddScoped<IAddressBookBL, AddressBookBL>();
-        builder.Services.AddScoped<IAddressBookRL, AddressBookRL>();
-
-        //Swagger configuration
+       
+        //Swagger configuration for draft message
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddSwaggerGen(options =>
