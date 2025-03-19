@@ -3,44 +3,64 @@
   "WorkspaceRootPath": "M:\\muskanAddressBook\\MyAddressBook\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|solutionrelative:myaddressbook\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\businesslayer\\service\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\userbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\businesslayer\\service\\contactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\contactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\businesslayer\\interface\\icontactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\interface\\icontactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\repositorylayer\\interface\\icontactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\interface\\icontactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|solutionrelative:myaddressbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\repositorylayer\\service\\contactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\service\\contactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\model\\updatecontactrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\model\\updatecontactrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|solutionrelative:myaddressbook\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\repositorylayer\\service\\userrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\service\\userrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\repositorylayer\\entity\\contactentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\entity\\contactentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|solutionrelative:myaddressbook\\controllers\\contactcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|solutionrelative:myaddressbook\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\businesslayer\\service\\contactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\service\\contactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\repositorylayer\\interface\\icontactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\interface\\icontactrl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\model\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\model\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\model\\updatecontactrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\model\\updatecontactrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\model\\userregisterrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\model\\userregisterrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\model\\userloginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\model\\userloginrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|solutionrelative:myaddressbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\businesslayer\\interface\\icontactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\interface\\icontactbl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\businesslayer\\businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\repositorylayer\\entity\\contactentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\entity\\contactentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\repositorylayer\\entity\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,24 +71,12 @@
       "RelativeMoniker": "D:0:0:{9D822278-7212-4BE1-839C-89CABA290CE6}|RepositoryLAyer\\RepositoryLayer.csproj|solutionrelative:repositorylayer\\dbcontext\\myaddressbookcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\MyAddressBook.csproj|solutionrelative:myaddressbook\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\model\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\model\\responsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\model\\userregisterrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\model\\userregisterrequestmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\businesslayer\\businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{163B750F-9757-43A0-B678-7BEBF25A7D6D}|BusinessLayer\\BusinessLayer.csproj|solutionrelative:businesslayer\\businesslayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|m:\\muskanaddressbook\\myaddressbook\\modellayer\\modellayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{E5273433-05DB-4DDC-9628-DEC034B1131A}|ModelLayer\\ModelLayer.csproj|solutionrelative:modellayer\\modellayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|m:\\muskanaddressbook\\myaddressbook\\myaddressbook\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4E6A3FA-BD30-4337-AE5D-C781870923E8}|MyAddressBook\\AddressBook.csproj|solutionrelative:myaddressbook\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,7 +86,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,7 +102,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "UserLoginRequestModel.cs",
+              "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\ModelLayer\\Model\\UserLoginRequestModel.cs",
+              "RelativeDocumentMoniker": "ModelLayer\\Model\\UserLoginRequestModel.cs",
+              "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\ModelLayer\\Model\\UserLoginRequestModel.cs",
+              "RelativeToolTip": "ModelLayer\\Model\\UserLoginRequestModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T05:58:42.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserBL.cs",
+              "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\BusinessLayer\\Service\\UserBL.cs",
+              "RelativeDocumentMoniker": "BusinessLayer\\Service\\UserBL.cs",
+              "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\BusinessLayer\\Service\\UserBL.cs",
+              "RelativeToolTip": "BusinessLayer\\Service\\UserBL.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwC4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-19T05:57:46.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "UpdateContactRequestModel.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\ModelLayer\\Model\\UpdateContactRequestModel.cs",
               "RelativeDocumentMoniker": "ModelLayer\\Model\\UpdateContactRequestModel.cs",
@@ -107,85 +141,85 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "IContactBL.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\BusinessLayer\\Interface\\IContactBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Interface\\IContactBL.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\BusinessLayer\\Interface\\IContactBL.cs",
               "RelativeToolTip": "BusinessLayer\\Interface\\IContactBL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T09:15:33.957Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IContactRL.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Interface\\IContactRL.cs",
               "RelativeDocumentMoniker": "RepositoryLAyer\\Interface\\IContactRL.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Interface\\IContactRL.cs",
               "RelativeToolTip": "RepositoryLAyer\\Interface\\IContactRL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA9wBQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T09:15:25.753Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "ContactBL.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\BusinessLayer\\Service\\ContactBL.cs",
               "RelativeDocumentMoniker": "BusinessLayer\\Service\\ContactBL.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\BusinessLayer\\Service\\ContactBL.cs",
               "RelativeToolTip": "BusinessLayer\\Service\\ContactBL.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACcAAAAAAAAAAAAowCwAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T06:26:15.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "ContactRL.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Service\\ContactRL.cs",
               "RelativeDocumentMoniker": "RepositoryLAyer\\Service\\ContactRL.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Service\\ContactRL.cs",
               "RelativeToolTip": "RepositoryLAyer\\Service\\ContactRL.cs",
-              "ViewState": "AgIAAGkAAAAAAAAAAAAAAIIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAiwDkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T06:10:32.944Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "UserRL.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Service\\UserRL.cs",
               "RelativeDocumentMoniker": "RepositoryLAyer\\Service\\UserRL.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Service\\UserRL.cs",
               "RelativeToolTip": "RepositoryLAyer\\Service\\UserRL.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAwEcAAAA1AAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAiwEcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T06:10:24.279Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 7,
               "Title": "ResponseModel.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\ModelLayer\\Model\\ResponseModel.cs",
               "RelativeDocumentMoniker": "ModelLayer\\Model\\ResponseModel.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\ModelLayer\\Model\\ResponseModel.cs",
               "RelativeToolTip": "ModelLayer\\Model\\ResponseModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T06:08:30.013Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "BusinessLayer.csproj",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\BusinessLayer\\BusinessLayer.csproj",
               "RelativeDocumentMoniker": "BusinessLayer\\BusinessLayer.csproj",
@@ -198,7 +232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "UserRegisterRequestModel.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\ModelLayer\\Model\\UserRegisterRequestModel.cs",
               "RelativeDocumentMoniker": "ModelLayer\\Model\\UserRegisterRequestModel.cs",
@@ -211,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "ModelLayer.csproj",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\ModelLayer\\ModelLayer.csproj",
               "RelativeDocumentMoniker": "ModelLayer\\ModelLayer.csproj",
@@ -224,7 +258,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "AuthController.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\MyAddressBook\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "MyAddressBook\\Controllers\\AuthController.cs",
@@ -237,72 +271,72 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ContactController.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\MyAddressBook\\Controllers\\ContactController.cs",
               "RelativeDocumentMoniker": "MyAddressBook\\Controllers\\ContactController.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\MyAddressBook\\Controllers\\ContactController.cs",
               "RelativeToolTip": "MyAddressBook\\Controllers\\ContactController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAQwCAAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T05:55:05.36Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\MyAddressBook\\appsettings.json",
               "RelativeDocumentMoniker": "MyAddressBook\\appsettings.json",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\MyAddressBook\\appsettings.json",
               "RelativeToolTip": "MyAddressBook\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-03-17T05:54:29.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\MyAddressBook\\Program.cs",
               "RelativeDocumentMoniker": "MyAddressBook\\Program.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\MyAddressBook\\Program.cs",
               "RelativeToolTip": "MyAddressBook\\Program.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T05:53:51.354Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 16,
               "Title": "MyAddressBookContext.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\DbContext\\MyAddressBookContext.cs",
               "RelativeDocumentMoniker": "RepositoryLAyer\\DbContext\\MyAddressBookContext.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\DbContext\\MyAddressBookContext.cs",
               "RelativeToolTip": "RepositoryLAyer\\DbContext\\MyAddressBookContext.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAIBJwBYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAEBVwBYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T05:44:07.777Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "ContactEntity.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Entity\\ContactEntity.cs",
               "RelativeDocumentMoniker": "RepositoryLAyer\\Entity\\ContactEntity.cs",
               "ToolTip": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Entity\\ContactEntity.cs",
               "RelativeToolTip": "RepositoryLAyer\\Entity\\ContactEntity.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAmwCEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA6wCEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T05:43:38.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 15,
               "Title": "UserEntity.cs",
               "DocumentMoniker": "M:\\muskanAddressBook\\MyAddressBook\\RepositoryLAyer\\Entity\\UserEntity.cs",
               "RelativeDocumentMoniker": "RepositoryLAyer\\Entity\\UserEntity.cs",

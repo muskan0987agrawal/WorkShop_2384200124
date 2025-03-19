@@ -13,9 +13,9 @@ namespace BusinessLayer.Interface
     {
         ResponseModel<ContactEntity> AddContact(CreateContactRequestModel contact);
         public List<ContactEntity> FetchAllContact();
-        //ResponseModel<ContactEntity> FetchContactById(int id);
-        //ResponseModel<ContactEntity> DeleteContactById(int id);
-        //ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact);
+        ResponseModel<ContactEntity> FetchContactById(int id);
+        ResponseModel<ContactEntity> DeleteContactById(int id);
+        ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact);
 
 
     }

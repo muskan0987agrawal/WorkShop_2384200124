@@ -52,9 +52,9 @@ namespace RepositoryLayer.Service
         }
 
         //Fetch Contact by Id
-        public ResponseModel<ContactEntity> FetchContactById(int id, int userId)
+        public ResponseModel<ContactEntity> FetchContactById(int id)
         {
-            var contact = addressBookContext.Contact.FirstOrDefault(c => c.Id == id && c.OwnerId == userId);
+            var contact = addressBookContext.Contact.FirstOrDefault(c => c.Id == id );
 
             if (contact == null)
             {
@@ -76,58 +76,58 @@ namespace RepositoryLayer.Service
 
 
         //Delete Contact by Id
-        //public ResponseModel<ContactEntity> DeleteContactById(int id, int userId)
-        //{
-        //    var contact = addressBookContext.Contact.FirstOrDefault(c => c.Id == id && c.OwnerId == userId);
+        public ResponseModel<ContactEntity> DeleteContactById(int id)
+        {
+            var contact = addressBookContext.Contact.FirstOrDefault(c => c.Id == id );
 
-        //    if (contact == null)
-        //    {
-        //        return new ResponseModel<ContactEntity>
-        //        {
-        //            Success = false,
-        //            Message = "Contact not found",
-        //            Data = null
-        //        };
-        //    }
+            if (contact == null)
+            {
+                return new ResponseModel<ContactEntity>
+                {
+                    Success = false,
+                    Message = "Contact not found",
+                    Data = null
+                };
+            }
 
-        //    addressBookContext.Contact.Remove(contact);
-        //    addressBookContext.SaveChanges();
+            addressBookContext.Contact.Remove(contact);
+            addressBookContext.SaveChanges();
 
-        //    return new ResponseModel<ContactEntity>
-        //    {
-        //        Success = true,
-        //        Message = "Contact Deleted successfully",
-        //        Data = contact
-        //    };
-        //}
+            return new ResponseModel<ContactEntity>
+            {
+                Success = true,
+                Message = "Contact Deleted successfully",
+                Data = contact
+            };
+        }
 
-        //public ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact, int userId)
-        //{
-        //    var updatedContact = addressBookContext.Contact.FirstOrDefault(c => c.Id == id && c.OwnerId == userId);
-        //    if (updatedContact == null)
-        //    {
-        //        return new ResponseModel<ContactEntity>
-        //        {
-        //            Success = false,
-        //            Message = "Contact not found",
-        //            Data = null
-        //        };
-        //    }
+        public ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact)
+        {
+            var updatedContact = addressBookContext.Contact.FirstOrDefault(c => c.Id == id );
+            if (updatedContact == null)
+            {
+                return new ResponseModel<ContactEntity>
+                {
+                    Success = false,
+                    Message = "Contact not found",
+                    Data = null
+                };
+            }
 
-        //    if (contact.Name != null) updatedContact.Name = contact.Name;
-        //    if (contact.Email != null) updatedContact.Email = contact.Email;
-        //    if (contact.PhoneNumber != null) updatedContact.PhoneNumber = contact.PhoneNumber;
-        //    addressBookContext.SaveChanges();
-
-
+            if (contact.Name != null) updatedContact.Name = contact.Name;
+            if (contact.Email != null) updatedContact.Email = contact.Email;
+            if (contact.PhoneNumber != null) updatedContact.PhoneNumber = contact.PhoneNumber;
+            addressBookContext.SaveChanges();
 
 
-        //    return new ResponseModel<ContactEntity>
-        //    {
-        //        Success = true,
-        //        Message = "Contact Updated successfully",
-        //        Data = updatedContact
-        //    };
-       // }
+
+
+            return new ResponseModel<ContactEntity>
+            {
+                Success = true,
+                Message = "Contact Updated successfully",
+                Data = updatedContact
+            };
+        }
     }
 }

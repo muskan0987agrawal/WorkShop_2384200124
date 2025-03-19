@@ -30,19 +30,19 @@ namespace BusinessLayer.Service
             return contactRL.FetchAllContact(userId);
         }
 
-        //public ResponseModel<ContactEntity> FetchContactById(int id)
-        //{
-        //    return contactRL.FetchContactById(id, userId);
-        //}
+        public ResponseModel<ContactEntity> FetchContactById(int id)
+        {
+            return contactRL.FetchContactById(id);
+        }
 
-        //public ResponseModel<ContactEntity> DeleteContactById(int id)
-        //{
-        //    return contactRL.DeleteContactById(id, userId);
-        //}
+        public ResponseModel<ContactEntity> DeleteContactById(int id)
+        {
+            return contactRL.DeleteContactById(id);
+        }
 
-        //public ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact)
-        //{
-        //    return contactRL.UpdateContactById(id, contact, userId);
-        //}
+        public ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact)
+        {
+            return contactRL.UpdateContactById(id, contact);
+        }
     }
 }

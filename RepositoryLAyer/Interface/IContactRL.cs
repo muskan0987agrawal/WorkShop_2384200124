@@ -12,9 +12,9 @@ namespace RepositoryLayer.Interface
     {
         ResponseModel<ContactEntity> AddContact(CreateContactRequestModel contact);
         List<ContactEntity> FetchAllContact(int userId);
-        //ResponseModel<ContactEntity> FetchContactById(int id, int userID);
-        //ResponseModel<ContactEntity> DeleteContactById(int id, int userId);
-        //ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact, int userId);
+        ResponseModel<ContactEntity> FetchContactById(int id);
+        ResponseModel<ContactEntity> DeleteContactById(int id);
+        ResponseModel<ContactEntity> UpdateContactById(int id, UpdateContactRequestModel contact);
     
 }
 }

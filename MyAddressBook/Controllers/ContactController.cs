@@ -39,50 +39,50 @@ namespace MyAddressBook.Controllers
             return Ok(result);
         }
 
-        //// Fetch Contact by Id
-        //[Authorize]
-        //[HttpGet("addressbook/{id}")]
-        //public IActionResult GetContactById(int id)
-        //{
-        //    var response = contactBL.FetchContactById(id);
+        // Fetch Contact by Id
+        [Authorize]
+        [HttpGet("addressbook/{id}")]
+        public IActionResult GetContactById(int id)
+        {
+            var response = contactBL.FetchContactById(id);
 
-        //    if (!response.Success)
-        //    {
-        //        return NotFound(new { Message = response.Message });
-        //    }
+            if (!response.Success)
+            {
+                return NotFound(new { Message = response.Message });
+            }
 
-        //    return Ok(response);
-        //}
+            return Ok(response);
+        }
 
-        //// PUT Contact by Id
-        //[Authorize]
-        //[HttpPut("addressbook/{id}")]
-        //public IActionResult UpdateContactById(int id, UpdateContactRequestModel contact)
-        //{
-        //    var response = contactBL.UpdateContactById(id, contact);
+        // PUT Contact by Id
+        [Authorize]
+        [HttpPut("addressbook/{id}")]
+        public IActionResult UpdateContactById(int id, UpdateContactRequestModel contact)
+        {
+            var response = contactBL.UpdateContactById(id, contact);
 
-        //    if (!response.Success)
-        //    {
-        //        return NotFound(new { Message = response.Message });
-        //    }
+            if (!response.Success)
+            {
+                return NotFound(new { Message = response.Message });
+            }
 
-        //    return Ok(response);
-        //}
+            return Ok(response);
+        }
 
-        //// Delete Contact by Id
-        //[Authorize]
-        //[HttpDelete("addressbook/{id}")]
-        //public IActionResult DeleteContactById(int id)
-        //{
-        //    var response = contactBL.DeleteContactById(id);
+        // Delete Contact by Id
+        [Authorize]
+        [HttpDelete("addressbook/{id}")]
+        public IActionResult DeleteContactById(int id)
+        {
+            var response = contactBL.DeleteContactById(id);
 
-        //    if (!response.Success)
-        //    {
-        //        return NotFound(new { Message = response.Message });
-        //    }
+            if (!response.Success)
+            {
+                return NotFound(new { Message = response.Message });
+            }
 
-        //    return Ok(response);
-        //}
+            return Ok(response);
+        }
 
     }
 }
