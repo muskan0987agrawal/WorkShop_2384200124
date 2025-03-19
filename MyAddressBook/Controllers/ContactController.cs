@@ -30,7 +30,7 @@ namespace MyAddressBook.Controllers
         }
 
         //// Fetch all Contact
-        //[Authorize]
+        [Authorize]
         [HttpGet("addressbook")]
         public IActionResult FetchAllContact()
         {
