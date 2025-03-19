@@ -23,13 +23,13 @@ namespace RepositoryLayer.Service
 
             if (existingUser != null) return null;
 
-            //var hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(user.Password);
             var newUser = new UserEntity
             {
                 Name = user.Name,
                 Email = user.Email,
                 IsAdmin = false,
-                PasswordHash = user.Password
+                PasswordHash =hashedPassword,
             };
 
             addressBookContext.Users.Add(newUser);
@@ -69,12 +69,7 @@ namespace RepositoryLayer.Service
                 StatusCode = 200 // OK
             };
         }
-        //public void StoreOTP(int otp, string email)
-        //{
-        //    var user = addressBookContext.Users.FirstOrDefault(c => c.Email == email);
-        //    user.Otp = otp;
-        //    addressBookContext.SaveChanges();
-        //}
+        
 
     }
 }
