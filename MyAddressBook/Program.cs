@@ -25,6 +25,9 @@ builder.Services.AddScoped<IUserBL, UserBL>();
 builder.Services.AddScoped<IContactBL, ContactBL>();
 builder.Services.AddScoped<IContactRL, ContactRL>();
 
+//For email sending service
+builder.Services.AddScoped<IEmailSender, EmailSender>();
+
 // Swagger Configuration with JWT Authentication
 builder.Services.AddSwaggerGen(c =>
 {

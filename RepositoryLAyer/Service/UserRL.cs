@@ -43,10 +43,12 @@ namespace RepositoryLayer.Service
         {
             var existingUser = addressBookContext.Users.FirstOrDefault(g => g.Email == user.Email);
 
-            if (existingUser == null)
+            if (existingUser == null || !BCrypt.Net.BCrypt.Verify(user.Password, existingUser.PasswordHash))
             {
                 return null; // Invalid credentials
             }
+
+
 
             var existingUser1 = new UserEntity
             {
@@ -64,7 +66,41 @@ namespace RepositoryLayer.Service
                 StatusCode = 200 // OK
             };
         }
-        
 
+        public void StoreOTP(int otp, string email)
+        {
+            var user = addressBookContext.Users.FirstOrDefault(c => c.Email == email);
+            user.Otp = otp;
+            addressBookContext.SaveChanges();
+        }
+
+        public ResponseModel<string> ResetPassword(ResetPasswordRequestModel request)
+        {
+            var user = addressBookContext.Users.FirstOrDefault(g => g.Email == request.Email);
+            if (user.Otp != request.Otp)
+            {
+                return new ResponseModel<string>
+                {
+                    Data = "Please try again",
+                    Success = true,
+                    Message = "Wrong or expired otp",
+                    StatusCode = 400 // OK
+                };
+            }
+            //it means otp is matched
+            var hashedPassword = BCrypt.Net.BCrypt.HashPassword(request.Password);
+            user.PasswordHash= hashedPassword;
+
+            user.Otp = 0;
+            addressBookContext.SaveChanges();
+
+            return new ResponseModel<string>
+            {
+                Data = "Done",
+                Success = true,
+                Message = "Password changed Successfully.",
+                StatusCode = 200 // OK
+            };
+        }
     }
 }

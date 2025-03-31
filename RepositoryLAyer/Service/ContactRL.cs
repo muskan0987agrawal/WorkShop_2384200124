@@ -31,7 +31,7 @@ namespace RepositoryLayer.Service
                 Name = contact.Name,
                 Email = contact.Email,
                 PhoneNumber = contact.PhoneNumber,
-                OwnerId = 2,
+                OwnerId = 1,
                 //Owner = owner!
             };
             addressBookContext.Contact.Add(newContact);

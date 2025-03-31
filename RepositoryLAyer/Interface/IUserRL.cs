@@ -12,5 +12,9 @@ namespace RepositoryLayer.Interface
     {
         ResponseModel<UserEntity> Register(UserRegisterRequestModel user);
         ResponseModel<UserEntity> Login(UserLoginRequestModel user);
+
+        void StoreOTP(int otp, string email);
+
+        ResponseModel<string> ResetPassword(ResetPasswordRequestModel request);
     }
 }

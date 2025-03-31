@@ -26,5 +26,7 @@ namespace RepositoryLayer.Entity
         [Required]
         public bool IsAdmin {  get; set; }
 
+        public int Otp { get; set; } = 0;
+
     }
 }

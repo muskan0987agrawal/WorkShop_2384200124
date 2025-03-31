@@ -1,4 +1,5 @@
 ﻿using BusinessLayer.Interface;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.Model;
 using RepositoryLayer.Entity;
@@ -33,6 +34,31 @@ namespace MyAddressBook.Controllers
         public IActionResult LoginUser(UserLoginRequestModel user)
         {
             var result = userBL.Login(user);
+            if (result == null)
+            {
+                return BadRequest(new { message = "Invalid Credentials!" });
+            }
+
+            return Ok(result);
+        }
+        //[Authorize]
+        [HttpPost("forgot-password")]
+        public async Task<IActionResult> ForgotPassword(ForgotPasswordRequestModel request)
+        {
+            var result = await userBL.ForgotPassword(request);
+            if (result == null)
+            {
+                return BadRequest(new { message = "Invalid Credentials!" });
+            }
+
+            return Ok(result);
+        }
+
+        //[Authorize]
+        [HttpPost("reset-password")]
+        public IActionResult ResetPassword(ResetPasswordRequestModel request)
+        {
+            var result = userBL.ResetPassword(request);
             if (result == null)
             {
                 return BadRequest(new { message = "Invalid Credentials!" });
